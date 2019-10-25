@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parentLayout"
+    >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/propic"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENSIAS"
+        android:id="@+id/name"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/propic"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ecole Nationale Supérieure d'Informatique et d'Analyse des Systèmes"
+        android:id="@+id/desc"
+        android:textColor="#000"
+        android:layout_toRightOf="@id/propic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="37dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/add_to_cart"
+        android:layout_width="122dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="2dp"
+        android:text="Add to cart"
+        android:textSize="10dp"
+        android:textColor="#009a9a"
+        android:background="#333333"/>
+
+</RelativeLayout>
